@@ -2,3 +2,29 @@
 // Layout :: Footer
 // ======================================================
 
+.hot-news{
+  position: fixed;
+  right: 8px;
+  bottom: 22px;
+  background: url("../img/bg-hot-news.png") no-repeat;
+  width: 70px;
+  height: 56px;
+  z-index: 9;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+}
+
+footer{
+  background: url("../img/bg-footer.png") no-repeat;
+  background-size: cover;
+  padding: 53px 0;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
