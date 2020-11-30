@@ -470,20 +470,23 @@
 //  }
 //}
 .head-bot{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 30px 0 30px;
+  //position: absolute;
+  //bottom: 0;
+  //left: 0;
+  //width: 100%;
+  background: #fff;
+  padding: 15px 0 60px;
   z-index: 1;
-  @include mobile-horizontal{
-    position: relative;
-    background: #fff;
-    padding: 15px 0 54px;
-    .container-headtop{
-      padding: 0 5px;
-    }
+  //@include mobile-horizontal{
+  //  position: relative;
+  //  background: #fff;
+  //  padding: 15px 0 54px;
+  //  .container-headtop{
+  //    padding: 0 5px;
+  //  }
+  //}
+  .pd-5{
+    padding: 0 5px;
   }
   .swiper-utility{
 
@@ -499,11 +502,11 @@
       .name-utility{
         font-weight: 500;
         color: #fff;
-        font-size: 16px;
-        min-height: 38px;
+        min-height: 40px;
+        margin-bottom: 0;
         @include mobile{
-          font-size: 13px;
-          line-height: 17px;
+          font-size: 16px;
+          line-height: 20px;
         }
       }
       @include mobile-horizontal{
