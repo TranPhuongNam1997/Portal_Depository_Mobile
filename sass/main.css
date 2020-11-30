@@ -985,7 +985,8 @@ select[readonly="readonly"] {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   .btn-announced:hover {
     background: #3f74a7;
     color: #fff; }
@@ -1108,6 +1109,46 @@ select[readonly="readonly"] {
       height: 4px;
       border-radius: 100%;
       background: #fff; }
+
+.bread-crumb {
+  background: #fff;
+  padding: 65px 0 15px; }
+  .bread-crumb ul li {
+    display: inline-block; }
+    .bread-crumb ul li:last-child a {
+      color: #255888; }
+    .bread-crumb ul li a {
+      font-size: 10.5px;
+      line-height: 13px; }
+      .bread-crumb ul li a:hover {
+        color: #255888; }
+
+.box-gray {
+  background: #FAFAFA;
+  padding: 5px 0; }
+
+.box-market .title-market {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  padding: 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid #097DBA; }
+
+.list-market li {
+  padding: 10px 0;
+  border-bottom: 1px solid #afafaf; }
+  .list-market li:last-child {
+    border-bottom: none; }
+  .list-market li h3 {
+    color: #202020;
+    font-size: 13.5px;
+    line-height: 16px; }
+    .list-market li h3 a {
+      display: block; }
+      .list-market li h3 a:hover {
+        color: #255888; }
 
 .hot-news {
   position: fixed;
