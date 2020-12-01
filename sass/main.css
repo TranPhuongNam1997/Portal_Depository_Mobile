@@ -321,7 +321,8 @@ select[readonly="readonly"] {
       left: 50%;
       transform: translateX(-50%); }
       .header .slidebanner .swiper-pagination > span {
-        margin-right: 12px;
+        margin-right: 8px;
+        margin-left: 8px;
         width: 12px;
         height: 12px;
         display: inline-block;
@@ -769,7 +770,8 @@ select[readonly="readonly"] {
   display: block;
   width: 36px;
   color: #FA9D17;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-weight: 400; }
 
 .ui-state-default {
   display: block;
@@ -777,7 +779,7 @@ select[readonly="readonly"] {
   color: #000;
   line-height: 20px;
   font-size: 16px;
-  padding: 8px; }
+  padding: 7px; }
 
 .ui-state-default:hover {
   background: #255888;
@@ -1127,28 +1129,114 @@ select[readonly="readonly"] {
   background: #FAFAFA;
   padding: 5px 0; }
 
-.box-market .title-market {
+.title-market {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   color: #000000;
   padding: 10px 0;
   display: inline-block;
-  border-bottom: 2px solid #097DBA; }
+  border-bottom: 2px solid #097DBA;
+  margin-bottom: 0; }
 
-.list-market li {
-  padding: 10px 0;
-  border-bottom: 1px solid #afafaf; }
-  .list-market li:last-child {
-    border-bottom: none; }
-  .list-market li h3 {
+.list-market {
+  border-top: 1px solid #AFAFAF;
+  padding-left: 10px; }
+  .list-market li {
+    padding: 10px 0;
+    border-bottom: 1px solid #afafaf; }
+    .list-market li:last-child {
+      border-bottom: none; }
+    .list-market li h3 {
+      color: #202020;
+      font-size: 13.5px;
+      line-height: 16px; }
+      .list-market li h3 a {
+        display: block; }
+        .list-market li h3 a:hover {
+          color: #255888; }
+
+.sub-cate {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 5px; }
+
+.time-newstcph {
+  font-size: 10.5px;
+  line-height: 13px;
+  margin-bottom: 10px; }
+
+.bg-white {
+  background: #fff;
+  padding: 10px 0px; }
+
+.block-category {
+  color: #000000; }
+  .block-category p {
     color: #202020;
-    font-size: 13.5px;
-    line-height: 16px; }
-    .list-market li h3 a {
-      display: block; }
-      .list-market li h3 a:hover {
-        color: #255888; }
+    margin-bottom: 10px;
+    line-height: 22px; }
+  .block-category .row {
+    margin-bottom: 10px; }
+
+.item-info.item-info-main {
+  font-weight: 700; }
+
+.link-cate {
+  margin-bottom: 20px; }
+  .link-cate ul {
+    text-align: right; }
+    .link-cate ul li {
+      display: inline-block;
+      margin-right: 10px; }
+      .link-cate ul li a img {
+        transition: all 0.3s; }
+      .link-cate ul li a:hover img {
+        transform: scale(1.1); }
+
+.bg-smoke {
+  background: #f0f0f0; }
+
+.head-mdl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: #FA9D17; }
+  .head-mdl h3 {
+    margin-bottom: 0;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px; }
+  .head-mdl .btn-close {
+    background: transparent;
+    border: none;
+    padding: 0; }
+
+.list-popup {
+  padding: 10px 15px; }
+  .list-popup li {
+    padding: 10px 0; }
+    .list-popup li h3 {
+      color: #202020;
+      font-size: 13.5px;
+      line-height: 16px; }
+      .list-popup li h3 a {
+        display: block; }
+        .list-popup li h3 a:hover {
+          color: #255888; }
+
+.modal.modal-news {
+  top: 50%;
+  transform: translateY(-50%); }
+
+.modal-news.show {
+  display: flex !important;
+  align-items: center; }
+  .modal-news.show .modal-dialog {
+    margin: 15px; }
 
 .hot-news {
   position: fixed;
@@ -1164,8 +1252,18 @@ select[readonly="readonly"] {
   line-height: 18px;
   display: flex;
   align-items: center;
-  padding-left: 6px; }
+  padding-left: 6px;
+  animation: hotnews 1s forwards; }
+  .hot-news:hover {
+    color: #fff; }
 
+@keyframes hotnews {
+  0% {
+    right: -40px;
+    opacity: 0.2; }
+  100% {
+    right: 8px;
+    opacity: 1; } }
 footer {
   background: url("../img/bg-footer.png") no-repeat;
   background-size: cover;

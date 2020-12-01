@@ -17,6 +17,20 @@
   display: flex;
   align-items: center;
   padding-left: 6px;
+  animation: hotnews 1s forwards;
+  &:hover{
+    color: #fff;
+  }
+}
+@keyframes hotnews {
+  0%{
+    right: -40px;
+    opacity: 0.2;
+  }
+  100%{
+    right: 8px;
+    opacity: 1;
+  }
 }
 
 footer{
