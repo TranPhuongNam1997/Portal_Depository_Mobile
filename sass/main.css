@@ -1249,7 +1249,8 @@ select[readonly="readonly"] {
 
 .modal-news.show {
   display: flex !important;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .modal-news.show .modal-dialog {
     margin: 15px; }
 
