@@ -667,13 +667,20 @@
   }
 }
 .modal.modal-news{
-  top: 50%;
-  transform: translateY(-50%);
+  //top: 50%;
+  //transform: translateY(-50%);
+  display: flex!important;
+  opacity: 0;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
 }
 .modal-news.show{
   display: flex!important;
   align-items: center;
   justify-content: center;
+  opacity: 1;
+  visibility: visible;
   .modal-dialog{
     margin: 15px;
     //position: absolute;
